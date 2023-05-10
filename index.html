@@ -11,8 +11,8 @@
             <div class="logo">Moqups</div>
             <div class="nav">
                 <div class="nav-items"><a href=#Home>Home</a></div>
-                <div class="nav-items nav-center">Our Package</div>
-                <div class="nav-items">Call us</div>
+                <div class="nav-items nav-center"><a href=#our-package>Our Package</a></div>
+                <div class="nav-items"><a href=#Call-us>Call Us</a></div>
             </div>
         </header>
 
@@ -26,33 +26,86 @@
                 </div>
                 <section class="main-form">
                     <div class="element-left">
-                        <div class="review">
-                            <img src="./Assets/img1.jpg">BANNER AUTOSLIDE
+                        <div class="review slider">
+                            <img src="./Assets/img1.jpeg", class="image-rvw"> <br>
                             <div class="review-content">"setiap hari beli sayur buah yang fresh disini"</div>
+                            <br>
                             <div class="review-user">
                                 <div class="circle">ICON PERSON</div>
-                                <div class="reviewer">Florence Hughes</div>
-                                <div class="reviewer-detail">Ibu Rumah Tangga, 28</div>
+                                <div class="reviewer">
+                                    <div class="reviewer-name">Florence Hughes</div>
+                                    <div class="reviewer-detail">Ibu Rumah Tangga, 28</div>
+                                </div>
                             </div>
+                            <br>
                         </div>
+                        <div class="review slider">
+                            <img src="./Assets/img2.jpeg" class="image-rvw"> <br>
+                            <div class="review-content">"setiap hari beli sayur buah yang fresh disini"</div>
+                            <br>
+                            <div class="review-user">
+                                <div class="circle">ICON PERSON</div>
+                                <div class="reviewer">
+                                    <div class="reviewer-name">2 Hughes</div>
+                                    <div class="reviewer-detail">3 Tangga, 28</div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="review slider">
+                            <img src="./Assets/img3.jpeg" class="image-rvw"> <br>
+                            <div class="review-content">"setiap hari beli sayur buah yang fresh disini"</div>
+                            <br>
+                            <div class="review-user">
+                                <div class="circle">ICON PERSON</div>
+                                <div class="reviewer">
+                                    <div class="reviewer-name">3 Hughes</div>
+                                    <div class="reviewer-detail">2 Tangga, 28</div>
+                                </div>
+                            </div>
+                            <br>
+                        </div> 
+
                         <div class="offer">
-                            <div class="circle">1</div>
-                            <div class="offer-information">Your First Feature, written in the form of a benefit statement</div>
+                            <div>
+                                Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product
+                            </div>
+                            <br>
+                            <div class="offer-list">
+                                <div class="circle">1</div>
+                                <div class="offer-information">Your First Feature, written in the form of a benefit statement</div>
+                            </div>
+                            <br>
+                            <div class="offer-list">
+                                <div class="circle">2</div>
+                                <div class="offer-information">Your second feature, written in the form of a benefit statement.</div>
+                            </div>
+                            <br>
+                            <div class="offer-list">
+                                <div class="circle">3</div>
+                                <div class="offer-information">Your third feature written, in the form of a benefit statement.</div>
+                            </div>
+                           
                         </div>
-                        
 
-
-                        <div class="circle">1</div>
-                        Left
                     </div>
                     <div class="element-right">
-                        <div class="title">Contact Us</div>
-                        <div class="desc">Sales akan menghubungi anda 1x24 Jam setelah data kami terima</div>
                         <div class="form">
-                            <label>Your Name:</label>
-                            <input id="name" name="name" class="input">
-
-                            <btn class="submit">SEND</btn>
+                            <div class="title">Contact Us</div>
+                            <div class="desc">Sales akan menghubungi anda 1x24 Jam setelah data kami terima</div>
+                            <br>
+                            <br>
+                            <form style="display: flex; flex-direction: column;">
+                                <label>Your Name:</label>
+                                <input id="name" name="name" class="input" placeholder="First and last name">
+                                <label>Email Address:</label>
+                                <input id="email" name="email" class="input" placeholder="example@email.com">
+                                <label for="phone">Phone Number:</label>
+                                <input id="phone" name="phone" class="input" placeholder="000000000000" type="tel">
+                                <label>Message:</label>
+                                <input id="message" name="message" class="input" placeholder="Your inquiry">
+                                <button type="submit" id="submitButton" class="submit">SEND</btn>
+                            </form>
                         </div>
                     </div>
                 </section>
@@ -60,29 +113,28 @@
             </section>
 
             <section id="our-package">
-                <div class="banner">
+                <div class="banner package">
                     Our Package
                 </div>
                 <div class="list">6 LIST</div>
             </section>
 
-            <section id="Call-us">
+            <section id="Call-us" class="call-us">
                 <div class="banner">
                     Your Closing Argument Headline
                 </div>
                 <div class="banner-info">
-                    AAA
+                    Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla, 
                 </div>
-                <div class="btn-call">Call to Action</div>
+                <div class="submit call">Call to Action</div>
             </section>
         </main>
 
-        <footer>
+        <footer class="footer">
             <div class="logo">Moqups</div>
-            <div class="tos">Terms of Service</div>
-            <div class="privacy">Privacy Policy</div>
+            <div class="tos"><a>Terms of Service   </a><a>   Privacy Policy</a></div>
             <div class="copyright">c 2019 Moqups</div>
         </footer>
-    
+        <script src="./script.js"></script>
     </body>
 </html>
