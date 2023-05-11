@@ -20,10 +20,15 @@ body {
     margin-bottom: 10px;
     width: 100px;
     height: 20px;
-    background: ./Assets/logo.jpg;
+    background: ./Assets/user.png;
 }
 .image-logo {
     height: 2em;
+}
+.icon-user, .icon-bulb, .icon-star {
+    padding: 10px;
+    height: 20px;
+    width: 20px;
 }
 .nav {
     margin-left: auto ;
@@ -73,6 +78,7 @@ a {
     word-wrap: normal;
     width: 50%;
     color: gray;
+    padding-bottom: 1em;
 }
 .title {
     font-size: larger;
@@ -129,6 +135,7 @@ a {
 }
 .review-content {
     color: gray;
+    font-style: italic;
 }
 .review-user {
     display: flex;
@@ -138,6 +145,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
+    margin-left: 5px;
 }
 .reviewer-name {
     font-weight: bolder;
@@ -148,9 +156,6 @@ a {
     font-style: italic;
     font-size: smaller;
     color: gray;
-}
-.slider {
-    
 }
 .image-rvw {
     width: 100%;
@@ -169,6 +174,7 @@ a {
     align-content: center;
     margin-left: 10px;
     color: gray;
+    font-size: small;
 }
 
 
@@ -228,6 +234,7 @@ li {
 .package-content {
     display: flex;
     flex-direction: column;
+    padding-bottom: 3em;
 }
 .package {
     background-color: #e8edf7;
@@ -267,6 +274,8 @@ li {
     border-top: 2px solid lightgrey;
     border-bottom: 2px solid lightgrey;
     padding: 1em;
+    padding-bottom: 3em;
+    padding-top: 2em;
 }
 .call {
     margin: auto;
