@@ -6,14 +6,18 @@ submitButton.addEventListener("click", function(event) {
   var emailValue = document.getElementById("email").value
   var phoneValue = document.getElementById("phone").value
   var messageValue = document.getElementById("message").value
-  nameValidation(nameValue)
+  nameValidation(nameValue, emailValue, phoneValue, messageValue)
 })
 
-function nameValidation(name) {
-  if (name != "") {
+function nameValidation(name, email, phone, message) {
+  if (name != "" && email != "" && phone != "") {
     alert("Berhasil")
-  } else {
+  } else if (name == "") {
     alert("Masukkan nama anda")
+  } else if (email == "") {
+    alert("Masukkan email anda")
+  } else if (phone == "") {
+    alert("Masukkan nomor telepon anda")
   }
 }
 
@@ -34,7 +38,7 @@ function showImage(index){
   for (i = 0; i < imgList.length; i++) {
     imgList[i].style.display = "none";
   }
-  imgList[slideIndex - 1].style.display = "block";
+  imgList[slideIndex - 1].style.display = "flex";
 }
 
 
